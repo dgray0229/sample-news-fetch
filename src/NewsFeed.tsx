@@ -42,7 +42,7 @@ export default function NewsFeed () {
 
   return (
     <>
-      <ul className='newsfeed'>
+      <ul className={`newsfeed ${showAll ? 'show' : ''}`}>
         {newsData.map((newsItem: NewsItem) => {
           return (
             <li>
